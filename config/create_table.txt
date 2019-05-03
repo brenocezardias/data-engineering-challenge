@@ -1,0 +1,17 @@
+CREATE TABLE campaign_analytics (
+	device_id     		VARCHAR(50),
+	lead_id	      		INT,
+	registered_at 		TIMESTAMP,
+	credit_decision 	VARCHAR(20),
+	credit_decision_at      TIMESTAMP,
+	signed_at 	        TIMESTAMP,
+	revenue 	        float8,
+	ad_creative_id 		VARCHAR(50),
+	campaign_id 		INT,
+	source 			VARCHAR(30),
+	ad_creative_name 	VARCHAR(100),
+	campaign_name 		VARCHAR(100),
+	clicks 			float8,
+	cost 			float8,
+	impressions 		BIGINT
+);
