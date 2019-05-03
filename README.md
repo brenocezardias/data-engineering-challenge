@@ -34,12 +34,12 @@ or just copy bellow
 	impressions 		BIGINT
 );
 ```
-**Data**
+## Data
 
- The files used are in [Data](https://github.com/brenocezardias/data-engineering-challenge/tree/master/Data) directory 
+ * The files used are in [Data](https://github.com/brenocezardias/data-engineering-challenge/tree/master/Data) directory 
  except for the pageview, because they exceed the allowed size
 
-**Running the script**
+## Running the script
 
 To run the script, you will need to set some things:
   1. Allocate files in an directory and set the path in `dir_files` on `1. EXTRACT DATA` in the code.
