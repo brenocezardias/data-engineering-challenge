@@ -24,7 +24,7 @@ or just copy bellow
 	credit_decision_at      TIMESTAMP,
 	signed_at 	        TIMESTAMP,
 	revenue 	        float8,
-	ad_creative_id 		INT,
+	ad_creative_id 		VARCHAR(50),
 	campaign_id 		INT,
 	source 			VARCHAR(30),
 	ad_creative_name 	VARCHAR(100),
