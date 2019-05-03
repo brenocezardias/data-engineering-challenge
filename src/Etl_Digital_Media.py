@@ -13,7 +13,7 @@ spark.sparkContext.setLogLevel("WARN")
 # 1. EXTRACT DATA
 
 # Gives the directory a name to read and write files
-dir_files = '/home/arquivos/'
+dir_files = '/home/'
 
 #Open the files
 
