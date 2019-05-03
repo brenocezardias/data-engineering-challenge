@@ -10,7 +10,7 @@ spark = SparkSession.builder.master("local[*]").appName("ETL Digital Media").get
 # Set Logging Level to WARN
 spark.sparkContext.setLogLevel("WARN")
 
-# 1. LOAD DATA
+# 1. EXTRACT DATA
 
 # Gives the directory a name to read and write files
 dir_files = '/home/arquivos/'
@@ -69,9 +69,9 @@ df_g_parse = spark.read.format("com.databricks.spark.csv") \
      .option("inferSchema", "true") \
      .load(dir_files + "google_parse.csv")
 
-df_g_json = spark.read.json("/home/arquivos/google_ads_media_costs.jsonl")
+df_g_json = spark.read.json(dir_files + "google_ads_media_costs.jsonl")
 
-df_f_json = spark.read.json("/home/arquivos/facebook_ads_media_costs.jsonl")
+df_f_json = spark.read.json(dir_files + "facebook_ads_media_costs.jsonl")
 
 # 2.TRANSFORM DATA
 
